@@ -1,2 +1,3 @@
 # VK-captcha
-download captcha in vk
+Downloads VK captcha for neural network.
+Downloads only Russian captchas.
