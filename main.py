@@ -24,4 +24,5 @@ for i in range(10000):
     file = open(f"img/{i}.png", "wb")
     file.write(response.content)
     file.close()
-    printProgressBar(i + 1, 10000, prefix='Progress:', suffix=f'Complete {int(time.time()-starttime)//60}:{int(time.time()-starttime)-(int(time.time()-starttime)//60)*60} File: img/{i}.png', length=50)
+    Time = "{:02}:{:02}".format(int((time.time()-starttime)//60), int(time.time()-starttime)-(int(time.time()-starttime)//60)*60)
+    printProgressBar(i + 1, 10000, prefix='Progress:', suffix=f'Complete {Time} File: img/{i}.png', length=50)
